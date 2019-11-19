@@ -1,0 +1,11 @@
+# Compiled Output
+/.build
+
+# Dependencies
+/node_modules
+
+# Misc
+/.serverless
+
+# System Files
+.DS_Store

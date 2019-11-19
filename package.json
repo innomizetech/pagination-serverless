@@ -1,0 +1,27 @@
+{
+  "name": "pagination-serverless-api",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "lint": "tslint '*.ts'",
+    "start": "sls offline",
+    "deploy": "sls deploy -stage dev"
+  },
+  "keywords": [],
+  "author": "Andy Nguyen",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/aws-sdk": "2.7.0",
+    "@types/node": "12.12.8",
+    "serverless-offline": "5.12.0",
+    "serverless-plugin-typescript": "1.1.9",
+    "tslint": "5.20.1",
+    "tslint-config-standard": "9.0.0",
+    "typescript": "3.7.2"
+  },
+  "dependencies": {
+    "aws-lambda": "0.1.2",
+    "serverless-mysql": "1.5.1",
+    "squel": "5.13.0"
+  }
+}

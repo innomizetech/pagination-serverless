@@ -1,0 +1,7 @@
+{
+  "recommendations": [
+    "ms-vscode.vscode-typescript-tslint-plugin",
+    "esbenp.prettier-vscode",
+    "vscode-icons-team.vscode-icons"
+  ]
+}

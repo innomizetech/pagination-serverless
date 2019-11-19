@@ -1,0 +1,24 @@
+{
+  "workbench.iconTheme": "vscode-icons",
+  "window.zoomLevel": 0,
+  "vsicons.projectDetection.disableDetect": true,
+  "extensions.ignoreRecommendations": true,
+  "vsicons.projectDetection.autoReload": true,
+  "editor.minimap.enabled": true,
+  "workbench.editor.showTabs": true,
+  "files.exclude": {
+    ".serverless": true,
+    "_warmup": true,
+    ".build": true,
+    "dist": true,
+    "**/dist": true,
+    "node_modules": true,
+    "**/node_modules": true,
+    ".npm-debug.log": true,
+    "package-lock.json": true,
+    "**/package-lock.json": true
+  },
+  "files.autoSave": "onWindowChange",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true
+}

@@ -1,0 +1,38 @@
+service: pagination-serverless-api
+frameworkVersion: '>=1.1.0 <2.0.0'
+
+provider:
+  name: aws
+  runtime: nodejs10.x
+  memorySize: 512 # optional, in MB, default is 1024
+  timeout: 10 # optional, in seconds, default is 6
+  versionFunctions: false # optional, default is true
+  region: us-east-2
+
+custom:
+  cors:
+    origin: '*'
+    headers:
+      - Cache-Control
+      - Content-Type
+      - Authorization
+      - Accept
+      - Accept-Encoding
+      - X-Amz-Date
+      - X-Api-Key
+      - X-Amz-Security-Token
+      - X-Amz-User-Agent
+    allowCredentials: false
+
+functions:
+  person:
+    handler: functions/person/index.handler
+    events:
+      - http:
+          path: persons
+          method: get
+          cors: ${self:custom.cors}
+
+plugins:
+  - serverless-plugin-typescript
+  - serverless-offline
