@@ -20,7 +20,7 @@
     "typescript": "3.7.2"
   },
   "dependencies": {
-    "aws-lambda": "0.1.2",
+    "aws-lambda": "1.0.5",
     "serverless-mysql": "1.5.1",
     "squel": "5.13.0"
   }
